@@ -17,3 +17,33 @@ h1 {
   border-radius: 0.8rem;
   background-color: var(--white);
 }
+
+/* styles.css */
+
+:root {
+  --black: #020202;
+  --white: #ffffff;
+  --blue: #00425c;
+  --cyan: #17a2b8;
+}
+
+body {
+  background-color: var(--cyan);
+}
+
+h1 {
+  text-align: center;
+}
+
+.donut-chart {
+  border-radius: 0.8rem;
+  background-color: var(--white);
+}
+
+.character-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.card-size {
+  max-width: 15rem; /* Adjust the width as you like */
+}
