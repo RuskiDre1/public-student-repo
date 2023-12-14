@@ -1,25 +1,22 @@
 // 01-characters.js
 
-// URL for the Thrones API
 const url = 'https://thronesapi.com/api/v2/Characters';
 
 // Fetch the character data from the Thrones API
 fetch(url)
   .then(response => response.json())
   .then(characters => {
-    // Call the function to display the characters on the page
     displayCharacters(characters);
   })
   .catch(error => {
     console.error('Error fetching character data:', error);
   });
 
-// Function to display each character on the page
 function displayCharacters(characters) {
   const charactersContainer = document.getElementById('characters-container');
   const characterTemplate = document.getElementById('character-template');
 
-  // Loop through the characters and create elements for each one
+  // Loop through the characters and create elements for each 
   characters.forEach(character => {
     const characterElement = characterTemplate.content.cloneNode(true);
 
